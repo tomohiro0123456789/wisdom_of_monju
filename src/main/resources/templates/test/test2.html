@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${test}">Insert title here</title>
+</head>
+<body>
+<h1 >title</h1>
+<h2complete</h2>
+<form method="post" action="#" th:action="@{/}" th:object="${boardForm}">
+	<label for="title">title:</label>
+	<input id="title" name="title" type="text" th:value=  "*{title}"><br>
+	<div th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></div>
+	<label for="name">name:</label>
+	<input id="name" name="name" type="text" th:value= "*{name}"><br>
+	<div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+	<label for="text">text:</label>
+	<textarea name="text" id="contents" rows="3" cols="40" th:field ="*{text}"></textarea><br>
+	<div th:if="${#fields.hasErrors('text')}" th:errors="*{text}"></div>
+	<input type="submit" value="Confirm">
+</form>
+</body>
+</html>

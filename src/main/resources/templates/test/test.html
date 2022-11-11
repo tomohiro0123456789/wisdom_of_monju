@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <meta  charset="UTF-8" >
+    <title th:text="${test}"></title>
+  </head>
+  <body>
+  <div th:replace="~{/common/common::headerA}"></div>
+      <h1 th:text="${boardList}"></h1>
+  
+  <table>
+	
+	<tr th:each="b : ${boardList}">
+		<td th:text="${b.id}"></td>
+		<td th:text="${b.title}"></td>
+		<td th:text="${b.name}"></td>
+		<td th:text="${b.text}"></td>
+		
+	</tr>
+</table>
+
+
+  
+  
+  
+  
+
+
+  </body>
+
+</html>

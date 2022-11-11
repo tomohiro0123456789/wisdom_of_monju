@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <header th:replace="~{/common/common::headerA}"></header>
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css"  th:href="@{/css/starter-template.css}" rel="stylesheet">
+  </head>
+
+  <body>
+  
+ 	<nav th:replace="~{/common/common::navA}"></nav>
+ 	  <h1 th:replace="~{/common/common::title}"> class="visually-hidden"></h1>
+ 	
+ 	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/heroes/">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/plus.css"  th:href="@{/css/plus.css}" rel="stylesheet">
+
+
+
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<main>
+
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/css/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h2 class="edit">"制作背景"</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+	<p>現在、ストレスで眠れない事や生活習慣の乱れの影響など、様々な要因で眠れないで困っている方々が多くいらっしゃると思います。
+	私自身も学生の時から寝たくても眠れない。眠いのに眠れないという症状で困っておりました。
+	最近、適応障害で不眠症の症状が見られ辛かった事を思い出したのもきっかけの一つです。
+	今までの経験や対処法を掲示板として発信する事で悩んでいる方に少しでも届く事。
+	また、他者から情報を得たり、一緒に共有したりとコミュニケーションの場として利用する場を設ければと思っております。
+	また、制作当初は睡眠についてに絞った掲示板としての役割を与えようと考えておりましたが、
+	生活の知恵という大きなカテゴリーとして広げて使用していただければ思っております。
+	文殊の知恵という由来は有名な諺の三人寄れば文殊の知恵から取っております。
+	三人いれば良い知恵が働くよという意味です。三人を投稿者、回答者、閲覧者というロールに見立て、
+	解決に導く知恵を提案できる場となってくれる事に期待を込めて付けた名です。
+	</p>
+
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h2 class=edit id="link">"目的"</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+    まず、一つ目としては私自身の持っている知識の共有、経験談を掲示板に乗せて発信していく。
+	二つ目は他者からの情報を受け取り、共有できる場を設けること。
+	三つ目としては情報を広げ、拡散していきたいというのが目的であるため、SNSの連携等を活用していきたい。
+	現在はSNSが主流で昔に比べると掲示板自体の利用価値も下がってきていると思います。
+	それでも掲示板を利用する理由としては特定のジャンルに対して突出した情報があったり、
+	絞り込みが便利だったりと本気で情報を求めて辿り着いた終着地点という認識でいます。
+	</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="#"th:href="@{/newtopic}"<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">新規投稿</button></a>
+        <a href="#"th:href="@{/topiclist}"<button type="button" class="btn btn-outline-secondary btn-lg px-4">投稿一覧</button></a>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+   <footer th:replace="~{/common/common::footer}"></footer>
+
+  <div class="b-example-divider mb-0"></div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+   
+    </div>
+    
+  </div>
+  
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="@{/js/jquery-slim.min.js}"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"  th:src="@{/js/popper.min.js}"></script>
+    <script src="../../dist/js/bootstrap.min.js"  th:src="@{/js/bootstrap.min.js}"></script>
+  </body>
+</html>
